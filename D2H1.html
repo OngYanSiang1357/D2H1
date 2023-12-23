@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+    <!--background-->
+        <img id="desert" src="image/desert.jpg">
+        <a-sky src="#desert"></a-sky>
+   <!--a-shapes-->
+   <a-box color="red" position="-2 -0.5 -6">
+   <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="3000" easing="linear"></a-animation>
+</a-box>
+<a-cylinder color="green" position="27 -0.5 -6" radius="1" height="0.5">
+    <a-animation attribute="rotation" to="360 0 0" repeat="indefinite" dur="3000" easing="linear"></a-animation>
+</a-cylinder>
+    </a-scene>
+    </body>
+</html>
